@@ -1,0 +1,49 @@
+{
+  "name": "vue-html-to-pdf-lenora",
+  "version": "1.0.7",
+  "description": "Vue 3 HTML to PDF converter component with customizable templates",
+  "main": "dist/vue-html-to-pdf-lenora.common.js",
+  "module": "dist/vue-html-to-pdf-lenora.umd.min.js",
+  "unpkg": "dist/vue-html-to-pdf-lenora.umd.min.js",
+  "files": [
+    "dist/*",
+    "styles.css"
+  ],
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-lib": "vue-cli-service build --target lib --name vue-html-to-pdf-lenora src/index.js",
+    "dev": "vue-cli-service serve"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "vue": "^3.2.13",
+    "vue3-html2pdf": "^1.1.2"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "pdf",
+    "html2pdf",
+    "quasar",
+    "pdf-generator",
+    "lenora"
+  ],
+  "author": "Samet Adsan",
+  "license": "MIT",
+  "homepage": "https://github.com/sametadsan/vue-html-to-pdf-lenora",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sametadsan/vue-html-to-pdf-lenora.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sametadsan/vue-html-to-pdf-lenora/issues"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.8",
+    "sass": "^1.85.1",
+    "sass-loader": "^16.0.5",
+    "vite": "^6.2.1"
+  }
+}

@@ -1,0 +1,84 @@
+npm install -g @vue/cli
+
+
+vue create vue-html-to-pdf-lenora
+cd vue-html-to-pdf-lenora
+
+npm install vue3-html2pdf
+
+index.js oluştur başlangıç componentini yaz
+
+import VueHtmlToPdfLenora from './components/VueHtmlToPdfLenora.vue';
+
+// Vue plugin için install metodu
+const install = (app) => {
+  app.component('VueHtmlToPdfLenora', VueHtmlToPdfLenora);
+};
+
+// ESM, CommonJS ve tarayıcı için uyumlu export
+export default {
+  install
+};
+
+export { VueHtmlToPdfLenora };
+
+pack.json : 
+
+"scripts": {
+  "serve": "vue-cli-service serve",
+  "build": "vue-cli-service build",
+  "build-lib": "vue-cli-service build --target lib --name vue-html-to-pdf-lenora src/index.js"
+}
+
+lib build : 
+
+npm run build-lib
+
+
+ardından : 
+{
+  "name": "vue-html-to-pdf-lenora",
+  "version": "1.0.0",
+  "description": "Vue 3 HTML to PDF converter component with customizable templates",
+  "main": "dist/vue-html-to-pdf-lenora.common.js",
+  "module": "dist/vue-html-to-pdf-lenora.umd.min.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "keywords": [
+    "vue",
+    "vue3",
+    "pdf",
+    "html2pdf",
+    "quasar",
+    "pdf-generator"
+  ],
+  "author": "Samet adsan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kullaniciadi/vue-html-to-pdf-lenora.git"
+  },
+  "dependencies": {
+    "vue": "^3.2.0",
+    "vue3-html2pdf": "^1.1.2"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  }
+}
+
+bağımlılıklar keyword vb. giriliyor.
+
+npm login
+npm publish
+
+
+sass hatası : npm install --save-dev sass-loader sass
+
+
+
